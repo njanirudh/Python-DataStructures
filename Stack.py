@@ -20,7 +20,7 @@ class Stack:
     def pop(self):
         return self.items.pop(0)
 
-#Remove data from the top most part of the stack
+#Show data from the top most part of the stack
     def peek(self):
         return self.items[0]
 
@@ -29,10 +29,11 @@ class Stack:
         return len(self.items)
 
 
-s = Stack()
-s.push("1")
-s.push("2")
+if __name__ == "__main__" :
+    stack = Stack()
 
-print s.pop()
-print s.peek()
+    stack.push("1")
+    stack.push("2")
+
+    print (stack.peek())
 
